@@ -278,6 +278,215 @@
                     
                 </div>
             </section>
+<!--
+    RESERVA / CONTACTO
+ -->
+
+            <section id="reserva" class="uk-section reserva">
+                <div class="uk-container uk-container-small">
+                    <div class="reserva-encabezado uk-text-center">
+                        <p class="seccion-etiqueta">
+                            Reserva
+                        </p>
+
+                        <h2 class="seccion-titulo">
+                            Planea tu proxima escapada
+                        </h2>
+                        <p class="seccion-texto">
+                            Cuéntanos cuándo quieres visitarnos y nos pondremos
+                            en contacto contigo para confirmar disponibilidad.
+                        >
+                    </div>
+
+                    <form class="uk-form-stacked reserva-formulario">
+                         <!-- Nombre y correo -->
+                          <div class="uk-grid-small" uk-grid>
+                            <div class="uk-width-1-2@s">
+                                <label class="uk-form-label" for="nombre">Nombre completo</label>
+                                <div class="uk-form-controls">
+                                    <input class="uk-input" id="nombre" type="text" placeholder="Tu nombre" required>
+
+                                </div>
+                            </div>
+                          </div>
+
+                             <div class="uk-width-1-2@s">
+
+                        <label
+                            class="uk-form-label"
+                            for="correo"
+                        >
+                            Correo electrónico
+                        </label>
+
+                        <div class="uk-form-controls">
+
+                            <input
+                                class="uk-input"
+                                id="correo"
+                                type="email"
+                                placeholder="tu@email.com"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                        <!-- Teléfono y huéspedes -->
+
+                        <div class="uk-grid-small" uk-grid>
+
+                            <div class="uk-width-1-2@s">
+
+                                <label
+                                    class="uk-form-label"
+                                    for="telefono"
+                                >
+                                    Teléfono
+                                </label>
+
+                                <div class="uk-form-controls">
+
+                                    <input
+                                        class="uk-input"
+                                        id="telefono"
+                                        type="tel"
+                                        placeholder="+57 300 000 0000"
+                                        required
+                                    >
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="uk-width-1-2@s">
+
+                                <label
+                                    class="uk-form-label"
+                                    for="huespedes"
+                                >
+                                    Número de huéspedes
+                                </label>
+
+                                <div class="uk-form-controls">
+
+                                    <input
+                                        class="uk-input"
+                                        id="huespedes"
+                                        type="number"
+                                        min="1"
+                                        placeholder="2"
+                                        required
+                                    >
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Fechas -->
+
+                        <div class="uk-grid-small" uk-grid>
+
+                            <div class="uk-width-1-2@s">
+
+                                <label
+                                    class="uk-form-label"
+                                    for="llegada"
+                                >
+                                    Fecha de llegada
+                                </label>
+
+                                <div class="uk-form-controls">
+
+                                    <input
+                                        class="uk-input"
+                                        id="llegada"
+                                        type="date"
+                                        required
+                                    >
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="uk-width-1-2@s">
+
+                                <label
+                                    class="uk-form-label"
+                                    for="salida"
+                                >
+                                    Fecha de salida
+                                </label>
+
+                                <div class="uk-form-controls">
+
+                                    <input
+                                        class="uk-input"
+                                        id="salida"
+                                        type="date"
+                                        required
+                                    >
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Mensaje -->
+
+                        <div class="uk-margin">
+
+                            <label
+                                class="uk-form-label"
+                                for="mensaje"
+                            >
+                                Mensaje o solicitud especial
+                            </label>
+
+                            <div class="uk-form-controls">
+
+                                <textarea
+                                    class="uk-textarea"
+                                    id="mensaje"
+                                    rows="5"
+                                    placeholder="Cuéntanos si tienes alguna solicitud especial..."
+                                    required
+                                ></textarea>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Botón -->
+
+                        <div class="uk-text-center">
+
+                            <button
+                                class="uk-button uk-button-primary reserva-boton"
+                                type="submit"
+                            >
+                                Enviar solicitud
+                            </button>
+
+                        </div>
+                    </form>
+
+                </div>
+
+            </section>
+
     </main>
 </body>
 </html>
