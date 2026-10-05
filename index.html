@@ -5,109 +5,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Casa Nativa, Un refugio para reconectar</title>
 
-    /* Tipografias */
+     <!--Tipografias -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
+    
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap"
         rel="stylesheet">
 
-    /* UIKIT CSS Y JS */
+     <!-- Estilos propios -->
+    <link rel="stylesheet" href="style.css">
+
+     <!-- UIKIT CSS Y JS -->
     
             <!-- UIkit CSS -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.25.25/dist/css/uikit.min.css" />
 
         <!-- UIkit JS -->
         <script src="https://cdn.jsdelivr.net/npm/uikit@3.25.25/dist/js/uikit.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/uikit@3.25.25/dist/js/uikit-icons.min.js"></script>
-
-            <style>
-                :root{
-                /* IDENTIDAD*/
-
-                --color-bosque: #263D32;
-                --color-marfil: #F3EBDD;
-                --color-terracota: #B66E49;
-                --color-arena: #D8C6A5;
-                --color-texto: #30352F;
-                --color-blanco: #FFFFFF;
-
-                --fuente-titulos: 'Cormorant Garamond', serif;
-                --fuente-texto: 'DM Sans', sans-serif;
-
-                }
-
-                /* 2. ESTILOS GENERALES*/
-
-            html {
-                scroll-behavior: smooth;
-            }
-
-            body {
-                margin: 0;
-                background-color: var(--color-marfil);
-                color: var(--color-texto);
-                font-family: var(--fuente-texto);
-                font-size: 16px;
-                line-height: 1.7;
-            }
-
-            h1,
-            h2,
-            h3,
-            h4 {
-                font-family: var(--fuente-titulos);
-                color: var(--color-bosque);
-                font-weight: 600;
-                line-height: 1.1;
-            }
-
-            a {
-                color: inherit;
-                text-decoration: none;
-            }
-
-            button,
-            input,
-            select,
-            textarea {
-                font: inherit;
-            }
-
-            img {
-                max-width: 100%;
-                height: auto;
-            }
-
-            /* =================================
-            3. ACCESIBILIDAD
-            ================================= */
-
-            :focus-visible {
-                outline: 3px solid var(--color-terracota);
-                outline-offset: 4px;
-            }
-
-            @media (prefers-reduced-motion: reduce) {
-                html {
-                    scroll-behavior: auto;
-                }
-
-                *,
-                *::before,
-                *::after {
-                    animation-duration: 0.01ms !important;
-                    animation-iteration-count: 1 !important;
-                    transition-duration: 0.01ms !important;
-                    scroll-behavior: auto !important;
-                }
-            }
-        
-       
-          </style>
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.25.25/dist/js/uikit-icons.min.js">
+        </script>  
 </head>
+
 <body>
+     <!--NAVEGACIÓN-->
+
+     <header 
+        class = "uk-position-relative">
+
+        <nav 
+            class="uk-navbar-container"
+            uk-navbar
+            aria-label="Navegación principal"
+        >
+        
+        <div class="container uk-container-large uk-width-1-1">
+
+            <div class="uk-navbar">
+                 <!-- Logo / nombre -->
+                  <div class="uk-navbar-left">
+                        <a 
+                            href="#inicio"
+                            class="uk-navbar-item uk-logo casa-logo"
+                            >Casa Nativa
+                         </a>
+                  </div>  
+                <!-- Navegación de escritorio -->
+                 <div class="uk-navbar-center uk-visible@m">
+                    <ul class="uk-navbar-nav">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#experiencia">Experiencia</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#reserva">Reserva</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+
+                    </ul>
+                 </div>
+
+               <!-- CTA + menú móvil -->
+                    <div class="uk-navbar-right">
+                        <a 
+                            href="#reserva"
+                            class="uk-button uk-button-primary uk-visible@m"
+                            >Reserva ahora</a>
     
+                        <a 
+                            href="#menu-movil"
+                            class="uk-navbar-toggle uk-hidden@m"
+                            uk-toggle
+                            aria-label="Abrir menú"
+                        >
+                            <span uk-navbar-toggle-icon></span>
+                        </a>
+                    </div>
+
+            </div>
+        </div>
+     </header>
+
+        <!--  MENÚ MÓVIL -->
+
+        <div id="menu-movil"
+            uk-offcanvas="overlay: true">
+
+            <div class="uk-offcanvas-bar">
+                <button 
+                    class="uk-offcanvas-close"
+                    type="button"
+                    uk-close
+                    aria-label="Cerrar menú"
+                ></button>
+
+                <h3 class="menu-titulo">
+                    Casa Nativa
+                </h3>
+
+                <ul class="uk-nav uk-nav-default">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#experiencia">Experiencia</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#reserva">Reserva</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                <a href="#reserva" 
+                    class="uk-button uk-button-primary uk-width-1-1 uk-margin-top">Reserva ahora</a>
+            </div>
+        </div>
+    <!-- CONTENIDO TEMPORAL  -->
+
+    <main id="inicio">
+
+        <section class="uk-section">
+
+            <div class="uk-container uk-container-small uk-text-center">
+
+                <h1>Casa Nativa</h1>
+
+                <p class="uk-text-lead">
+                    Respira naturaleza. Descansa como en casa.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
 </body>
 </html>
