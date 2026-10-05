@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa Nativa, Un refugio para reconectar</title>
+
+    //Tipografias
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+            <style>
+                :root{
+                /* IDENTIDAD*/
+
+                --color-bosque: #263D32;
+                --color-marfil: #F3EBDD;
+                --color-terracota: #B66E49;
+                --color-arena: #D8C6A5;
+                --color-texto: #30352F;
+                --color-blanco: #FFFFFF;
+
+                --fuente-titulos: 'Cormorant Garamond', serif;
+                --fuente-texto: 'DM Sans', sans-serif;
+
+                /* 2. ESTILOS GENERALES*/
+
+            html {
+                scroll-behavior: smooth;
+            }
+
+            body {
+                margin: 0;
+                background-color: var(--color-marfil);
+                color: var(--color-texto);
+                font-family: var(--fuente-cuerpo);
+                font-size: 16px;
+                line-height: 1.7;
+            }
+
+            h1,
+            h2,
+            h3,
+            h4 {
+                font-family: var(--fuente-titulos);
+                color: var(--color-bosque);
+                font-weight: 600;
+                line-height: 1.1;
+            }
+
+            a {
+                color: inherit;
+                text-decoration: none;
+            }
+
+            button,
+            input,
+            select,
+            textarea {
+                font: inherit;
+            }
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            /* =================================
+            3. ACCESIBILIDAD
+            ================================= */
+
+            :focus-visible {
+                outline: 3px solid var(--color-terracota);
+                outline-offset: 4px;
+            }
+
+            @media (prefers-reduced-motion: reduce) {
+                html {
+                    scroll-behavior: auto;
+                }
+
+                *,
+                *::before,
+                *::after {
+                    animation-duration: 0.01ms !important;
+                    animation-iteration-count: 1 !important;
+                    transition-duration: 0.01ms !important;
+                    scroll-behavior: auto !important;
+                }
+            }
+        }
+       
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
