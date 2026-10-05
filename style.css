@@ -86,3 +86,186 @@ img {
     }
 
 }
+
+
+/* =================================
+   4. NAVEGACIÓN
+================================= */
+
+.uk-navbar-container {
+    background-color: var(--color-marfil) !important;
+    border-bottom: 1px solid rgba(38, 61, 50, 0.12);
+}
+
+.uk-navbar {
+    min-height: 80px;
+}
+
+.casa-logo {
+    font-family: var(--fuente-titulos);
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--color-bosque) !important;
+    letter-spacing: 0.02em;
+}
+
+.uk-navbar-nav > li > a {
+    font-family: var(--fuente-texto);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-texto);
+    text-transform: none;
+}
+
+.uk-navbar-nav > li > a:hover {
+    color: var(--color-terracota);
+}
+
+.uk-button-primary {
+    background-color: var(--color-bosque);
+    color: var(--color-blanco);
+    border-radius: 3px;
+    font-family: var(--fuente-texto);
+    font-weight: 600;
+    text-transform: none;
+}
+
+.uk-button-primary:hover {
+    background-color: var(--color-terracota);
+    color: var(--color-blanco);
+}
+
+.uk-navbar-toggle {
+    color: var(--color-bosque);
+}
+
+.uk-offcanvas-bar {
+    background-color: var(--color-bosque);
+}
+
+.menu-titulo {
+    font-family: var(--fuente-titulos);
+    color: var(--color-marfil);
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.uk-nav-primary > li > a {
+    color: var(--color-marfil);
+    font-family: var(--fuente-texto);
+    font-size: 17px;
+    padding: 10px 0;
+}
+
+.uk-nav-primary > li > a:hover {
+    color: var(--color-arena);
+}
+
+
+/* =================================
+   5. HERO
+================================= */
+
+.hero {
+    min-height: 650px;
+
+    background-image:
+        linear-gradient(
+            rgba(38, 61, 50, 0.55),
+            rgba(38, 61, 50, 0.55)
+        ),
+        url("https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1800&q=80");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+
+    color: var(--color-blanco);
+}
+
+.hero-contenido {
+    max-width: 700px;
+    padding: 90px 0;
+}
+
+.hero-etiqueta {
+    margin-bottom: 15px;
+
+    color: var(--color-arena);
+
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+}
+
+.hero-titulo {
+    margin: 0 0 25px;
+
+    color: var(--color-blanco);
+
+    font-size: clamp(48px, 7vw, 82px);
+}
+
+.hero-texto {
+    max-width: 620px;
+    margin-bottom: 30px;
+
+    color: var(--color-blanco);
+
+    font-size: 17px;
+}
+
+.hero-botones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.hero-boton-secundario {
+    background-color: transparent;
+    color: var(--color-blanco);
+
+    border: 1px solid var(--color-blanco);
+}
+
+.hero-boton-secundario:hover {
+    background-color: var(--color-blanco);
+    color: var(--color-bosque);
+}
+
+
+/* =================================
+   6. RESPONSIVE
+================================= */
+
+@media (max-width: 640px) {
+
+    .hero {
+        min-height: 600px;
+    }
+
+    .hero-contenido {
+        padding: 70px 20px;
+    }
+
+    .hero-titulo {
+        font-size: 48px;
+    }
+
+    .hero-texto {
+        font-size: 16px;
+    }
+
+    .hero-botones {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-botones .uk-button {
+        text-align: center;
+    }
+
+}

@@ -39,48 +39,49 @@
             aria-label="Navegación principal"
         >
         
-        <div class="container uk-container-large uk-width-1-1">
+            <div class="uk-container uk-container-large uk-width-1-1">
 
-            <div class="uk-navbar">
-                 <!-- Logo / nombre -->
-                  <div class="uk-navbar-left">
-                        <a 
-                            href="#inicio"
-                            class="uk-navbar-item uk-logo casa-logo"
-                            >Casa Nativa
-                         </a>
-                  </div>  
-                <!-- Navegación de escritorio -->
-                 <div class="uk-navbar-center uk-visible@m">
-                    <ul class="uk-navbar-nav">
-                        <li><a href="#inicio">Inicio</a></li>
-                        <li><a href="#experiencia">Experiencia</a></li>
-                        <li><a href="#servicios">Servicios</a></li>
-                        <li><a href="#reserva">Reserva</a></li>
-                        <li><a href="#contacto">Contacto</a></li>
+                <div class="uk-navbar">
+                    <!-- Logo / nombre -->
+                    <div class="uk-navbar-left">
+                            <a 
+                                href="#inicio"
+                                class="uk-navbar-item uk-logo casa-logo"
+                                >Casa Nativa
+                            </a>
+                    </div>  
+                    <!-- Navegación de escritorio -->
+                    <div class="uk-navbar-center uk-visible@m">
+                        <ul class="uk-navbar-nav">
+                            <li><a href="#inicio">Inicio</a></li>
+                            <li><a href="#experiencia">Experiencia</a></li>
+                            <li><a href="#servicios">Servicios</a></li>
+                            <li><a href="#reserva">Reserva</a></li>
+                            <li><a href="#contacto">Contacto</a></li>
 
-                    </ul>
-                 </div>
-
-               <!-- CTA + menú móvil -->
-                    <div class="uk-navbar-right">
-                        <a 
-                            href="#reserva"
-                            class="uk-button uk-button-primary uk-visible@m"
-                            >Reserva ahora</a>
-    
-                        <a 
-                            href="#menu-movil"
-                            class="uk-navbar-toggle uk-hidden@m"
-                            uk-toggle
-                            aria-label="Abrir menú"
-                        >
-                            <span uk-navbar-toggle-icon></span>
-                        </a>
+                        </ul>
                     </div>
 
+                <!-- CTA + menú móvil -->
+                        <div class="uk-navbar-right">
+                            <a 
+                                href="#reserva"
+                                class="uk-button uk-button-primary uk-visible@m"
+                                >Reservar ahora</a>
+        
+                            <a 
+                                href="#menu-movil"
+                                class="uk-navbar-toggle uk-hidden@m"
+                                uk-toggle
+                                aria-label="Abrir menú"
+                            >
+                                <span uk-navbar-toggle-icon></span>
+                            </a>
+                        </div>
+
+                </div>
             </div>
-        </div>
+        </nav>
      </header>
 
         <!--  MENÚ MÓVIL -->
@@ -100,7 +101,7 @@
                     Casa Nativa
                 </h3>
 
-                <ul class="uk-nav uk-nav-default">
+                <ul class="uk-nav uk-nav-primary">
                     <li><a href="#inicio">Inicio</a></li>
                     <li><a href="#experiencia">Experiencia</a></li>
                     <li><a href="#servicios">Servicios</a></li>
@@ -115,19 +116,51 @@
 
     <main id="inicio">
 
-        <section class="uk-section">
+        <section class="hero">
 
-            <div class="uk-container uk-container-small uk-text-center">
+        <div class="uk-container uk-container-large">
 
-                <h1>Casa Nativa</h1>
+            <div class="hero-contenido">
 
-                <p class="uk-text-lead">
-                    Respira naturaleza. Descansa como en casa.
+                <p class="hero-etiqueta">
+                    Escápate de la rutina
                 </p>
+
+                <h1 class="hero-titulo">
+                    Respira naturaleza.<br>
+                    Descansa como en casa.
+                </h1>
+
+                <p class="hero-texto">
+                    Casa Nativa es un refugio rural pensado para
+                    desconectarte del ruido, disfrutar el paisaje
+                    y vivir una experiencia tranquila a pocos
+                    minutos de la ciudad.
+                </p>
+
+                <div class="hero-botones">
+
+                    <a
+                        href="#reserva"
+                        class="uk-button uk-button-primary"
+                    >
+                        Consultar disponibilidad
+                    </a>
+
+                    <a
+                        href="#experiencia"
+                        class="uk-button hero-boton-secundario"
+                    >
+                        Conocer la experiencia
+                    </a>
+
+                </div>
 
             </div>
 
-        </section>
+        </div>
+
+    </section>
 
     </main>
 </body>
