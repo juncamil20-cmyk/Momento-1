@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     anime({
-        targets: ".logo .nav-link, .nav-cta",
+        targets: ".casa-logo .uk-navbar-nav, .uk.navbar-right",
         translateX: [-15, 0],
         opacity: [0, 1],
         delay: anime.stagger(100),
